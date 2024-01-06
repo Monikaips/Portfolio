@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MY PORTFOLIO WEBSITE</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha384-d7e5e1a6a9fd4c95a8b7e5fa00cb72c59b98b481565d8b63eab48a61d48a9a9f" crossorigin="anonymous">
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var navLinks = document.querySelectorAll('.navbar ul li a');
+
+            navLinks.forEach(function (link) {
+                link.addEventListener('click', function (e) {
+                    e.preventDefault();
+
+                    var targetId = this.getAttribute('href');
+                    var targetElement = document.querySelector(targetId);
+
+                    if (targetElement) {
+                        if (targetId === '#home') {
+                            window.scrollTo({
+                                top: 0,
+                                behavior: 'smooth'
+                            });
+                        } else {
+                            targetElement.scrollIntoView({
+                                behavior: 'smooth'
+                            });
+                        }
+                    }
+                });
+            });
+            
+            // Add click event for "Monika" section
+            var monikaSection = document.getElementById("monika-section");
+
+            monikaSection.addEventListener("click", function () {
+                monikaSection.classList.toggle("hovered");
+            });
+        });
+    </script>
+
+</head>
+
+<body>
+    <div class="header" id="home">
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <img src="images/logo.jpg" width="150px" alt="Logo">
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about-me">About</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#connect">Connect</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-2" id="monika-section">
+                <h1><br><br> <br><br>I'm MONIKA</h1>
+                <h5>Aspiring web developer</h5>
+                <p>This is my personal portfolio website to show all my skills and detailed work experience.</p>
+                <a href="resume.pdf" class="btn" target="_blank">Explore Now &#8594;</a>
+                
+            </div>
+        </div>
+
+        <!-- About Me Section -->
+        <div class="row" id="about-me">
+            <div class="col-2 img-container">
+                <img src="images/web.jpg" alt="Web Development Image">
+            </div>
+            <div class="col-2 about-section">
+                <h2>About Me<br><br></h2>
+                <p>Hello! I'm Monika, a pre-final year student majoring in Computer Science and Engineering at the Government College of Engineering, Salem. Fueled by a passion for web development, I'm on the journey to completing my education, equipped with the skills to create impactful software solutions. As an aspiring web developer, I find joy in turning ideas into reality through coding and contributing to the dynamic web landscape. Explore my portfolio for a glimpse of my skills and projects, and feel free to connect—I'm just a message away!</p>
+            </div>
+        </div>
+
+        <!-- Skills Section (Placeholder) -->
+        <div class="row" id="skills">
+            <div class="col-2">
+                <h2>Skills</h2>
+                <div id="skills-placeholder">
+                    <!-- Placeholder for your skills content. -->
+                    <div class="skill-item" id="skill-c">
+                        <img src="images/c.png" alt="C">
+                        <p>C</p>
+                        <p class="description">Description for C programming skills. C is a powerful and versatile programming language often used for system programming, embedded systems, and more. I have a solid understanding of C syntax, data structures, and algorithms.</p>
+                    </div>
+                    
+                    <div class="skill-item" id="skill-html">
+                        <img src="images/HTML.PNG" alt="HTML">
+                        <p>HTML</p>
+                        <p class="description">Description for HTML skills. HTML is the backbone of web development, providing the structure for web pages. I am proficient in creating semantic and accessible HTML documents, ensuring a solid foundation for web projects.</p>
+                    </div>
+                    
+                    <div class="skill-item" id="skill-css">
+                        <img src="images/CSS.png" alt="CSS">
+                        <p>CSS</p>
+                        <p class="description">Description for CSS skills. CSS is essential for styling web pages and creating visually appealing layouts. I have expertise in using CSS to design responsive and aesthetically pleasing user interfaces for web applications.</p>
+                    </div>
+                    
+                    <div class="skill-item" id="skill-java">
+                        <img src="images/java.png" alt="Java">
+                        <p>Java</p>
+                        <p class="description">Java is a versatile and object-oriented programming language. With hands-on experience in developing Java applications, including backend systems and enterprise-level software, I bring proficiency in leveraging Java's robust features. My skills extend to creating scalable and maintainable solutions, ensuring efficient and reliable software development.</p></div>
+                    
+                    <div class="skill-item" id="skill-python">
+                        <img src="images/python.png" alt="Python">
+                        <p>Python</p>
+                        <p class="description">Description for Python programming skills. Python is a powerful and high-level programming language known for its readability and versatility. I am skilled in utilizing Python for data analysis and automation.</p>
+                    </div>
+                    
+                    <!-- Add more skills as needed -->
+                </div>
+            </div>
+        </div>
+
+        <!-- Connect Section -->
+        <div class="row" id="connect">
+            <div class="col-lg-3 col-md-6 footer-links">
+                <h2>Connect<br> <br></h2>
+                <p>Feel free to connect with me.<br><br></p>
+                <ul>
+                    <li><strong>Email:</strong> <a href="mailto:csemonikap@gmail.com"><span>&#9993;</span> csemonikap@gmail.com</a></li>
+                    <li><strong>GitHub:</strong><a href="https://github.com/Monikaips"><i class="fab bi-github"></i> https://github.com/Monikaips</a></li>
+                    <li style="margin-bottom: 10px;"><strong>Location:</strong> <br>SALEM, INDIA</li>
+                </ul>
