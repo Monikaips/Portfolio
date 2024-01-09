@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    color: #070707;
+    background-image: url(images/language.jpg) ;
+    width: 85%;
+    border-radius: 26px;
+    text-align: center;
+    padding: 20px 60px 30px 40px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.card {
+    width: 250px;
+    height: 300px;
+    background: #25a5be !important;
+    border: none !important;
+    box-shadow: 15px 20px 20px rgba(0, 0, 0, .3),
+                inset 4px 4px 10px #25a5be;
+    border-radius: 20px !important;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 60px;
+}
+
+.login {
+    background: #fad028 !important;
+    color: #f8fdfd !important;
+}
+
+.card:hover {
+    box-shadow: inset 5px 5px 10px rgba(0, 0, 0, .3),
+                inset -4px -4px 10px #25a5be;
+    transition: .2s;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+
+#navbar {
+  position: sticky;
+  top: 0;
+  left: 150;
+  z-index: 50;
+  padding: .5rem 5rem;
+  box-shadow: 5px 5px 20px rgba(14, 13, 13, 0.5);
+  background: #fcfdf6;
+}
+#navbar img {
+  border-radius: 100px; /* You can adjust the value to control the border radius */
+}
+section {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+#home {
+  background: linear-gradient(rgba(39, 37, 37, 0.3), rgba(58, 46, 46, 0.4)), url(images/homenew.jpg);
+  background-size: cover;
+  background-position: center;
+  flex-direction: column;
+  padding-bottom: 50px;
+}
+.bottom-text {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#home h1 {
+  font-size: 100px;
+  color: #eff7f6;
+  letter-spacing: 3px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#home p {
+  font-size: 20px;
+  color: #fff;
+}
